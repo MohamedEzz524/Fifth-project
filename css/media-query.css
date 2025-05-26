@@ -1,0 +1,110 @@
+/* sm */
+@media screen and (min-width: 576px) {
+}
+
+/* md */
+@media screen and (min-width: 768px) {
+  /************** work Section *****************/
+  .modal .modal-body .carousel-control-next {
+    transform: translate(200%, 0);
+    -webkit-transform: translate(200%, 0);
+    -moz-transform: translate(200%, 0);
+    -ms-transform: translate(200%, 0);
+    -o-transform: translate(200%, 0);
+  }
+  .modal .modal-body .carousel-control-prev {
+    transform: translate(-200%, 0);
+    -webkit-transform: translate(-200%, 0);
+    -moz-transform: translate(-200%, 0);
+    -ms-transform: translate(-200%, 0);
+    -o-transform: translate(-200%, 0);
+  }
+}
+
+/* lg */
+@media screen and (min-width: 992px) {
+  /************** Home Section *****************/
+
+  .navbar .navbar-nav > .nav-item {
+    margin-right: 10px;
+  }
+
+  .navbar .nav-item > a.nav-link {
+    color: #fff;
+    position: relative;
+  }
+
+  .navbar .nav-item > a.nav-link::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+
+  .navbar .nav-item > a.nav-link:hover::before {
+    width: 90%;
+    margin: auto;
+  }
+
+  body:not(:has(:target)) .navbar .nav-item > a.nav-link.home::before,
+  body:has(#home-section:target) .navbar .nav-item > a.nav-link.home::before,
+  body:has(#about-section:target) .navbar .nav-item > a.nav-link.about::before,
+  body:has(#services-section:target)
+    .navbar
+    .nav-item
+    > a.nav-link.services::before,
+  body:has(#work-section:target) .navbar .nav-item > a.nav-link.work::before,
+  body:has(#blog-section:target) .navbar .nav-item > a.nav-link.blog::before,
+  body:has(#contact-section:target)
+    .navbar
+    .nav-item
+    > a.nav-link.contact::before {
+    width: 90%;
+    margin: auto;
+  }
+
+  .navbar .nav-item > a.nav-link:hover {
+    color: #fff;
+  }
+
+  body:not(:has(:target)) .navbar .nav-item > a.nav-link.home,
+  body:has(#home-section:target) .navbar .nav-item > a.nav-link.home,
+  body:has(#about-section:target) .navbar .nav-item > a.nav-link.about,
+  body:has(#services-section:target) .navbar .nav-item > a.nav-link.services,
+  body:has(#work-section:target) .navbar .nav-item > a.nav-link.work,
+  body:has(#blog-section:target) .navbar .nav-item > a.nav-link.blog,
+  body:has(#contact-section:target) .navbar .nav-item > a.nav-link.contact {
+    color: #fff;
+  }
+
+  .sidebar-body {
+    background-color: transparent;
+  }
+
+  .dropdown-submenu > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-right: 0.05rem;
+  }
+
+  .home-section .home-content .home-animation::after {
+    top: 50%;
+  }
+}
+
+/* xl */
+@media screen and (min-width: 1200px) {
+}
+
+/* xxl */
+@media screen and (min-width: 1400px) {
+}
